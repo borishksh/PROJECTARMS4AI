@@ -1,0 +1,207 @@
+:root {
+    --primaryColor: #8ee4af;
+    --mainWhite: #fff;
+    --mainBlack: #000000;
+    --darkbg: #0e1012;
+    --darkgrey: #303030;
+    --blue: #03085D;
+    --yellow: #FFB831;
+    --lightGrey: #F2F2F2;
+    --lightBlue: #4C54D1;
+    --grey: #D9D9D9;
+    --greyText: #808080;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 3px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+
+
+.carosal-holder {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    flex-direction: row-reverse;
+}
+  
+.carousal-text {
+    display: none;
+    transition: all 1s;
+}
+  
+.carousal-text.show{
+    display: block;
+    animation: image_blur 0.5s ease-in-out;
+}
+  
+.carosal-right {
+    z-index: 3;
+}
+
+.carosal-right div{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 48px;
+    display: none;
+    transition: all 1s;
+    position: relative;
+    z-index: 3;
+}
+  
+.carosal-right div img{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+  
+.carosal-right div::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 0.2vw solid transparent;
+    border-radius: 3vw;
+    background: 
+      linear-gradient(100deg, white, white), 
+      linear-gradient(150deg,  #FFB831,#248694, #248694, #03085D); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    z-index: -1; 
+    transform: rotate(-7deg);
+}
+  
+.carosal-right div.show{
+    display: block;
+    animation: image_blur 0.2s ease-in-out;
+    z-index: 3; 
+}
+  
+.carosal-index {
+    display: block;
+    margin: 3vw 0 2vw 0;
+    font-size: 5vw;
+    font-weight: 900;
+    width: fit-content;
+    background-image: url('../assets/multi-text.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: 0.5vw;   
+    letter-spacing: 1vw;
+    padding-left: 0.5vw;
+}
+  
+  .carosal-title {
+    padding: 0 10px;
+    display: block;
+    font-size: 1.7vw;
+    font-weight: 900;
+    color: var(--blue);
+    -webkit-text-stroke-width: 0.1vw;   
+    letter-spacing: 0.2vw;
+    margin-left: 3vw;
+  }
+  
+  .carosal-details {
+    padding: 2vw 10px 0px 10px;
+    display: block;
+    font-size: 1vw;
+    font-weight: 900;
+    color: var(--mainBlack);
+    margin-left: 3vw;
+  }
+  
+  .slider {
+    display: flex;
+    margin: 2vw 0;
+  }
+  
+  .slider-holder {
+    display: block;
+    margin-left: 3vw;
+  }
+  
+  .slider div {
+    cursor: pointer;
+    margin-left: 1vw;
+    height: 2.5vw;
+    width: 2.5vw;
+    padding: 0.3vw 0.8vw;
+    font-size: 1.5vw;
+    border-radius: 30vw;
+    background-color: var(--yellow);
+    color: var(--mainWhite);
+    position: relative;
+    z-index: 100;
+  }
+
+  @media (max-width: 800px) {
+    .slider div {
+      margin-left: 10px;
+      height: 30px;
+      width: 30px;
+      padding: 2px 10px;
+      font-size: 20px;
+      border-radius: 50%;
+      background-color: var(--yellow);
+      color: var(--mainWhite);
+    }
+
+    .slider-holder {
+      margin-left: 30px;
+    }
+    
+  }
+
+.carosal-right div{
+    height: 37vw;
+    width: 30vw;
+}
+  
+
+  
+@media screen and (min-width: 1800px) {
+  .carosal-index {
+    margin: 130px 0 40px 0;
+  }
+
+
+
+}
+
+  @media (max-width: 1000px) {
+    
+    .carosal-right div::before {
+        height: 327px;
+    }
+     
+    .carosal-index {
+        font-size: 40px;
+        margin-top: 50px;
+        -webkit-text-stroke-width: 5px;   
+        letter-spacing: 5px;
+    }
+
+    .carosal-right div{
+      margin-top: 30px;
+      height: 350px;
+      width: 80%;
+  }
+
+  .carosal-title {
+    font-size: 18px;
+  }
+
+  .carosal-details {
+    font-size: 12px;
+  }
+  
+}

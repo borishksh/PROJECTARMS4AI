@@ -1,0 +1,52 @@
+
+.ppa-none {
+  opacity: 0;
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px;
+}
+
+.default-product-bar {
+  transition: all 0.2s ease-in-out;
+}
+  
+.product-bar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5vw;
+    background-color: transparent;
+    z-index: 2;
+}
+  
+.product-bar div button{
+    background-color: transparent;
+    border: 0;
+    text-align: start;
+    vertical-align: top;
+    cursor: pointer;
+}
+  
+  
+.product-bar div button{
+    color: var(--grey);
+}
+  
+.product-bar div .active{
+    color: var(--mainBlack);
+}
+
+
+.ppa-center{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 180px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,36 @@
+
+.section-bar {
+    background-color: var(--mainWhite);
+    border-radius: 4vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-content:center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4vw;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-bar button {
+    color: var(--greyText);
+    background-color: transparent;
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .section-bar .active {
+    color: var(--blue);
+  }
+
+  @media (max-width: 1000px) { 
+    .section-bar {
+        display: none;
+      }
+  }
+
+  

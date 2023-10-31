@@ -1,0 +1,127 @@
+
+.introducing-heading {
+    padding-top: 20vw;
+    height: 65vw;
+    transition: all 0.3s;
+}
+  
+  .pre-know {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .introducing-heading h1{
+    position: sticky;
+    position: -webkit-sticky;
+    text-align: center;
+    top: 20vw;
+    font-weight: 900;
+    -webkit-text-stroke: 4px;
+    letter-spacing: 4px;
+    margin: 0;
+  }
+  
+  .prepare-p {
+    margin-bottom: 40px;
+    font-size: 1.3vw;
+    line-height: 150%;
+    display: block;
+    width: 120%;
+    font-weight: 600;
+  }
+  
+  .know-more {
+    font-size: 12px;
+    outline: none;
+    background-color: var(--blue);
+    color: var(--mainWhite);
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 120px;
+    float: right;
+    margin-right: 100px;
+  }
+  
+  .prepare {
+    font-size: 1.6vw;
+    background-image: url('../assets/Rectangle 92.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 14vw;
+    color: #fff;
+    padding: 1.7vw 1vw;
+    text-align: center;
+    transition: all 0.2s;
+    opacity: 1;
+  }
+  
+  
+  .prepareai {
+    font-weight: 100;
+  }
+  
+  .prepare-head {
+    margin: 30px 0px;
+    font-size: 2.2vw;
+    line-height: 120%;
+    -webkit-text-stroke-width: 0.1vw;   
+    letter-spacing: 4px;
+    color: var(--greyText);
+  }
+  
+  .prepare-div {
+    transition: all 0.2s;
+    opacity: 1;
+  }
+
+  .fade {
+    opacity: 0;
+  }
+  
+  .intro-left p {
+    font-size: 1vw;
+    opacity: 1;
+    transition: all 0.2s;
+  }
+
+.intro-holder-1  {
+    margin-top: 100px;
+}
+
+.intro-holder-1, .intro-holder {
+    margin-bottom: 100px;
+}
+
+.intro-left {
+    margin-top: 8vw;
+}
+
+@media (max-width: 1000px) {
+  .prepare {
+    font-size: 18px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .prepare-head {
+    font-size: 18px;
+  }
+
+    .prepare-p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .prepare-p br{
+      display: none;
+  }
+
+    .introducing-heading {
+        padding-top: 0px;
+        height: fit-content;
+    }
+      
+}
