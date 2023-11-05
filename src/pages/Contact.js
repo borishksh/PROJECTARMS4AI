@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import {FaAt,FaBuilding,FaLinkedin,FaTwitter,FaFacebook} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import PageLoader from '../components/PageLoader';
 
 export default function Contact() {
 
@@ -14,6 +15,8 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <PageLoader/>
     <div className='containers'>
       <div className='lg:flex my-[150px] justify-between'>
         <div className='contact-left'>
@@ -71,5 +74,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   )
 }

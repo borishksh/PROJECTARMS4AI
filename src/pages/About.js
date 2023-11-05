@@ -1,28 +1,33 @@
 import React,{Component} from 'react';
 import { NavLink  } from "react-router-dom";
+import images from '../helpers/Images';
+import PageLoader from '../components/PageLoader';
 
-import elipse2 from '../assets/Ellipse 59-11.png';
-import jagriti from "../assets/Jagriti.png";
-import siddham from "../assets/Siddham.png";
-import himanshu from "../assets/Himanshu.png";
-import twiter from "../assets/twitter (1) 1.svg";
-import linkedn from "../assets/Path_2520.svg";
-import dabas from '../assets/RC_Dabas-removebg-preview.png';
-import shidarth from '../assets/Sidharrth.png';
-import nitesh from '../assets/Nitish-removebg-preview.png';
-import anubav from '../assets/Anubhav-removebg-preview.png';
-import divyansh from '../assets/Divyansh-removebg-preview.png';
-import mondal from '../assets/Som_Mondal-removebg-preview.png';
-import thapur from '../assets/Sapan_Thapar-removebg-preview.png';
-import chart from '../assets/chart-simple-horizontal 1.png';
-import satellite from '../assets/satellite-1 1.png';
-import evelop from '../assets/envelop-icon 1.png';
-import human from '../assets/human-gear-icon 1.png';
-import admed from '../assets/Shakeel_Ahmed-removebg-preview.png';
-import pk from '../assets/pk.png';
-import logo from '../assets/arms-logo (1) 1.png';
-import group9 from '../assets/twitter (1) 1.png';
-import group10 from '../assets/linkedin (1) 1.png';
+
+const {
+  elipse2,
+  jagriti,
+  siddham,
+  himanshu,
+  twiter,
+  linkedn,
+  dabas,
+  shidarth,
+  nitesh,
+  anubav,
+  divyansh,
+  mondal,
+  thapur,
+  chart,
+  satellite,
+  evelop,
+  human,
+  admed,
+  pk,
+  logo,
+  group9,
+  group10,
+} = images;
  
 export default class 
 About extends Component {
@@ -152,6 +157,7 @@ render() {
 
   return (
     <>
+    <PageLoader/>
       <div className="bg-eclipse-dark relative">
         <div className='containers'>
           <div className="pb-[200px] lg:pb-[30vw] pt-[200px] lg:pt-[15vw] ">

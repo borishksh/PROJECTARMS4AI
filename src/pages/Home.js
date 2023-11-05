@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import PageLoader from '../components/PageLoader';
 import ProductStatItem from '../helpers/ProductStatItem';
 import Carosal from '../components/Carosal';
 import IntroductionGeo from '../components/IntroductionGeo';
@@ -6,32 +7,36 @@ import Client from '../components/Client';
 import Slider from "react-slick";
 import { NavLink  } from "react-router-dom";
 
-import logo from '../assets/arms-logo (1) 1.png';
-import elipse1 from '../assets/Ellipse 661.png';
-import elipse2 from '../assets/Group 3581.png';
-import elipse3 from '../assets/Ellipse 63.png';
-import elipse4 from '../assets/Ellipse 64.png';
-import group1 from '../assets/Group 3512.png';
-import group2 from '../assets/Group 3516.png';
-import group3 from '../assets/Group 3517.png';
-import group4 from '../assets/Group 3647.png';
-import group5 from '../assets/Group 3648.png';
-import group6 from '../assets/Group 3649.png';
-import group7 from '../assets/Group 3650.png';
-import group8 from '../assets/Group 3648 (1).png';
-import group9 from '../assets/twitter (1) 1.png';
-import group10 from '../assets/linkedin (1) 1.png';
-import vector1 from '../assets/Vector 68.png';
-import vector2 from '../assets/Vector 69.png';
-import rect1 from '../assets/Rectangle130.png';
-import rect2 from '../assets/Rectangle 27.png';
-import rect3 from '../assets/Rectangle 28.png';
-import rect4 from '../assets/Rectangle 29.png';
-import rect5 from '../assets/Rectangle 30.png';
-import acquire from '../assets/Acquire.gif';
-import tranform from '../assets/Transform.gif';
-import derive from '../assets/Derive Insights.gif';
-import videos from '../assets/world.mp4';
+import images from '../helpers/Images';
+
+const {
+  logo,
+  elipse1,
+  elipse2,
+  elipse3,
+  elipse4,
+  group1,
+  group2,
+  group3,
+  group4,
+  group5,
+  group6,
+  group7,
+  group8,
+  group9,
+  group10,
+  vector1,
+  vector2,
+  rect1,
+  rect2,
+  rect3,
+  rect4,
+  rect5,
+  acquire,
+  transform,
+  derive,
+  videos,
+} = images; 
 
 function SampleNextArrow(props) {
   const { style, onClick } = props;
@@ -241,6 +246,7 @@ export default function Home() {
 
   return (
     <>
+    <PageLoader/>
       <div className="bg-eclipse-dark relative lg:pb-[100px]">
         <div className='containers'>
           <div className="pb-[200px] lg:pb-[16vh] pt-[200px] lg:pt-[20vh] lg:flex lg:justify-between">
@@ -368,7 +374,7 @@ export default function Home() {
                     <img src={acquire} alt='' className='h-[30vw] w-[100%] rounded-[2vw]'/>
                   </div>
                   <div className='himg'>
-                    <img src={tranform} alt='' className='h-[30vw] w-[100%] rounded-[2vw]'/>
+                    <img src={transform} alt='' className='h-[30vw] w-[100%] rounded-[2vw]'/>
                   </div>
                   <div className='himg'>
                     <img src={derive} alt='' className='h-[30vw] w-[100%] rounded-[2vw]'/>
@@ -404,7 +410,7 @@ export default function Home() {
       </div>
 
       <div className='bg-white'>
-        <div className='w-[98.9vw] h-[50px] hidden lg:block mt-[15vh] overflow-hidden'>
+        <div className='w-[100%] h-[50px] hidden lg:block mt-[15vh] overflow-hidden'>
           <img src={vector1} alt='' className='w-[100%] h-[100%]'/>
         </div>
         <div>
@@ -423,7 +429,7 @@ export default function Home() {
                 </div>
             </div>
           </div>
-          <div className='w-[98.9vw] h-[50px] hidden lg:block mt-[10vh]  overflow-hidden'>
+          <div className='w-[100%] h-[50px] hidden lg:block mt-[10vh]  overflow-hidden'>
             <img src={vector2} alt='' className='w-[100%] h-[100%]'/>
           </div>
 

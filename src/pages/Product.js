@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProductList from '../components/ProductList';
+import PageLoader from '../components/PageLoader';
 
 import elipse2 from '../assets/Ellipse 59123.png';
 import elipse1 from '../assets/Ellipse 6612.png';
@@ -29,6 +30,7 @@ export default class Product extends Component {
 
     return (
       <>
+      <PageLoader/>
         <div className="bg-eclipse-dark relative lg:pb-[25vw]">
           <div className='containers'>
             <div className="pb-[200px] lg:pb-[10vw] pt-[200px] lg:pt-[15vw]">

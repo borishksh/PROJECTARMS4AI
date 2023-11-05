@@ -3,6 +3,7 @@ import { goToPrevious, goToNext } from '../helpers/CarousalSlider';
 import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
 import { blogs } from '../blogs/Blogs';
+import PageLoader from '../components/PageLoader';
 
 export default function Resources() {
   const carouselRef = useRef(null);
@@ -18,6 +19,7 @@ export default function Resources() {
 
   return (
     <>
+    <PageLoader/>
       <div className='containers'>
         <div className="blog-head-line">
           <div className="head-line-left">

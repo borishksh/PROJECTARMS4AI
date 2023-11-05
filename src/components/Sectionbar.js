@@ -1,25 +1,29 @@
 import React, {useRef, useEffect} from 'react';
 import './sectionbar.css'
 
-import agri1 from '../assets/Farm Wise Crop yield Estimation and Prediction.jpeg';
-import agri2 from '../assets/Location Wise Soil Moisture Assessment.jpeg';
-import agri3 from '../assets/Predicting Optimum Time of Crop Harvest.jpeg';
-import agri4 from '../assets/agri4.png';
-import agri5 from '../assets/agri5.png';
-import infra1 from '../assets/infra1.png';
-import infra2 from '../assets/infra2.png';
-import infra3 from '../assets/infra3.png';
-import infra4 from '../assets/infra4.png';
-import env1 from '../assets/env1.png';
-import env2 from '../assets/Automatic Land Use Land Cover Classification.jpeg';
-import env3 from '../assets/env3.png';
-import env4 from '../assets/env4.png';
-import env5 from '../assets/env5.png';
-import env6 from '../assets/env6.png';
-import time1 from '../assets/time1.png';
-import time2 from '../assets/time2.png';
-import time3 from '../assets/time3.png';
-import time4 from '../assets/time4.png';
+import images from '../helpers/Images';
+
+const {
+    agri1,
+    agri2,
+    agri3,
+    agri4,
+    agri5,
+    infra1,
+    infra2,
+    infra3,
+    infra4,
+    env1,
+    env2,
+    env3,
+    env4,
+    env5,
+    env6,
+    time1,
+    time2,
+    time3,
+    time4,
+} = images;
 
 export default function Sectionbar() {
 

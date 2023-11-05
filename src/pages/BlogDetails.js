@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { goToPrevious, goToNext } from '../helpers/CarousalSlider';
 import { Link   } from "react-router-dom";
 import { blogs } from '../blogs/Blogs';
+import PageLoader from '../components/PageLoader';
 
 export default function BlogDetails(props) {
     
@@ -26,7 +27,9 @@ export default function BlogDetails(props) {
     const body = location.state.body.split('\n');
 
     return (
-        <><div className='containers'>
+        <>
+        <PageLoader/>
+        <div className='containers'>
             <div className='blog-details mt-[100px]'>
                 <p className="topic">
                     {location.state.topic}

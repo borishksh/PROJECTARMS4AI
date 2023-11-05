@@ -1,5 +1,6 @@
 import React from 'react';
 import Sectionbar from '../components/Sectionbar';
+import PageLoader from '../components/PageLoader';
 
 import elipse2 from '../assets/Ellipse 59 (1).png';
 import image1 from '../assets/Group 3494.png';
@@ -7,6 +8,7 @@ import image1 from '../assets/Group 3494.png';
 export default function Industry() {
   return (
     <>
+    <PageLoader/>
         <div className="bg-eclipse-dark relative">
           <div className='containers'>
             <div className="pb-[50px] lg:pb-[5vw] pt-[200px] lg:pt-[15vw] ">
